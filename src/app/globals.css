@@ -1,0 +1,225 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0b2a4a;
+  --navy-deep: #071a2f;
+  --navy-mid: #123556;
+  --navy-light: #1a4468;
+  --gold: #d9a441;
+  --gold-soft: #e8c56a;
+  --steel: #6b7280;
+  --steel-light: #c5cdd6;
+  --bg: #f7f8fa;
+  --bg-alt: #eef1f5;
+  --text: #152033;
+  --text-muted: #5b6777;
+  --border: #d7dde6;
+  --maroon: #9b2c2c;
+  --white: #ffffff;
+}
+
+@theme inline {
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-mid: var(--navy-mid);
+  --color-navy-light: var(--navy-light);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-steel: var(--steel);
+  --color-steel-light: var(--steel-light);
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-maroon: var(--maroon);
+  --font-sans: var(--font-source);
+  --font-display: var(--font-barlow);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-source), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 40%, white);
+  color: var(--navy);
+}
+
+.container-site {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: max(1rem, env(safe-area-inset-left));
+  padding-inline-end: max(1rem, env(safe-area-inset-right));
+}
+
+@media (min-width: 640px) {
+  .container-site {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-site {
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-site {
+    max-width: 1400px;
+    padding-inline: 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container-site {
+    max-width: 1440px;
+  }
+}
+
+.section-pad {
+  padding-block: 3rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-block: 4.75rem;
+  }
+}
+
+.industrial-grid {
+  background-image:
+    linear-gradient(rgba(11, 42, 74, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 42, 74, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+[id] {
+  scroll-margin-top: 6rem;
+}
+
+/* Space for mobile bottom action bar */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(4.25rem + env(safe-area-inset-bottom));
+  }
+}
+
+.motion-safe-fade {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .motion-safe-fade {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.6s ease,
+      transform 0.6s ease;
+  }
+  .motion-safe-fade.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-item {
+  position: relative;
+  color: var(--text-muted);
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0.65rem;
+  right: 0.65rem;
+  bottom: 0.2rem;
+  height: 2px;
+  background: transparent;
+  transition: background 0.2s ease;
+}
+.nav-item:hover {
+  color: var(--navy);
+  background: var(--bg-alt);
+}
+.nav-item:hover::after {
+  background: color-mix(in srgb, var(--gold) 55%, transparent);
+}
+.nav-item-active {
+  color: var(--navy) !important;
+  font-weight: 700;
+}
+.nav-item-active::after {
+  background: var(--gold) !important;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 42s linear infinite;
+}
+
+@media (max-width: 767px) {
+  .marquee-track {
+    animation-duration: 55s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

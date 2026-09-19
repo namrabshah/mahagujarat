@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Industrial pipes background">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071525"/>
+      <stop offset="45%" stop-color="#0B1D36"/>
+      <stop offset="100%" stop-color="#132F4C"/>
+    </linearGradient>
+    <linearGradient id="pipe" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D1D5DB"/>
+      <stop offset="40%" stop-color="#9CA3AF"/>
+      <stop offset="100%" stop-color="#4B5563"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E3A5F" stroke-width="0.8" opacity="0.45"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <!-- blueprint arcs -->
+  <circle cx="1280" cy="180" r="220" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.25"/>
+  <circle cx="1280" cy="180" r="160" fill="none" stroke="#94A3B8" stroke-width="1" opacity="0.2"/>
+  <circle cx="1280" cy="180" r="100" fill="none" stroke="#C9A227" stroke-width="1" opacity="0.3"/>
+  <!-- large pipes -->
+  <g opacity="0.55">
+    <ellipse cx="1180" cy="720" rx="90" ry="40" fill="#374151"/>
+    <rect x="1090" y="320" width="180" height="400" fill="url(#pipe)"/>
+    <ellipse cx="1180" cy="320" rx="90" ry="40" fill="#E5E7EB"/>
+    <ellipse cx="1180" cy="320" rx="55" ry="24" fill="#1F2937"/>
+  </g>
+  <g opacity="0.4">
+    <ellipse cx="1400" cy="780" rx="70" ry="32" fill="#374151"/>
+    <rect x="1330" y="400" width="140" height="380" fill="url(#pipe)"/>
+    <ellipse cx="1400" cy="400" rx="70" ry="32" fill="#D1D5DB"/>
+    <ellipse cx="1400" cy="400" rx="42" ry="18" fill="#111827"/>
+  </g>
+  <!-- flange detail -->
+  <g transform="translate(980,520)" opacity="0.5">
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#C9A227" stroke-width="8"/>
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#94A3B8" stroke-width="4"/>
+  </g>
+  <!-- left vignette -->
+  <rect width="900" height="900" fill="url(#bg)" opacity="0.35"/>
+</svg>

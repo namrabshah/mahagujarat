@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="800" height="640" role="img">
+  <defs>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8ECF0"/>
+      <stop offset="35%" stop-color="#A8B2BD"/>
+      <stop offset="70%" stop-color="#6B7682"/>
+      <stop offset="100%" stop-color="#3D4650"/>
+    </linearGradient>
+    <linearGradient id="steelLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3F5F7"/>
+      <stop offset="50%" stop-color="#C5CDD6"/>
+      <stop offset="100%" stop-color="#7A8794"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0D78C"/>
+      <stop offset="50%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#8A6B12"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#0B1D36"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bg)"/>
+  <rect x="0" y="0" width="400" height="4" fill="#0B1D36"/>
+  <g transform="translate(70,55)">
+    <circle cx="100" cy="105" r="95" fill="url(#brass)" stroke="#8A6B12" stroke-width="2"/>
+    <circle cx="100" cy="105" r="42" fill="#F8FAFC" stroke="#8A6B12" stroke-width="3"/>
+    <circle cx="100" cy="28" r="10" fill="#5C4A10"/>
+    <circle cx="100" cy="182" r="10" fill="#5C4A10"/>
+    <circle cx="28" cy="105" r="10" fill="#5C4A10"/>
+    <circle cx="172" cy="105" r="10" fill="#5C4A10"/>
+    <circle cx="48" cy="48" r="10" fill="#5C4A10"/>
+    <circle cx="152" cy="48" r="10" fill="#5C4A10"/>
+    <circle cx="48" cy="162" r="10" fill="#5C4A10"/>
+    <circle cx="152" cy="162" r="10" fill="#5C4A10"/>
+  </g>
+  <g transform="translate(210,70)" opacity="0.92">
+    <circle cx="90" cy="95" r="85" fill="url(#steel)" stroke="#4B5563" stroke-width="2"/>
+    <circle cx="90" cy="95" r="38" fill="#F1F5F9" stroke="#4B5563" stroke-width="3"/>
+  </g>
+</svg>

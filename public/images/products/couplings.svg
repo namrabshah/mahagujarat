@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="800" height="640" role="img">
+  <defs>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8ECF0"/>
+      <stop offset="35%" stop-color="#A8B2BD"/>
+      <stop offset="70%" stop-color="#6B7682"/>
+      <stop offset="100%" stop-color="#3D4650"/>
+    </linearGradient>
+    <linearGradient id="steelLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F3F5F7"/>
+      <stop offset="50%" stop-color="#C5CDD6"/>
+      <stop offset="100%" stop-color="#7A8794"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0D78C"/>
+      <stop offset="50%" stop-color="#C9A227"/>
+      <stop offset="100%" stop-color="#8A6B12"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#0B1D36"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="320" fill="url(#bg)"/>
+  <rect x="0" y="0" width="400" height="4" fill="#0B1D36"/>
+  <rect x="80" y="120" width="240" height="80" rx="12" fill="url(#steel)" stroke="#4B5563" stroke-width="2"/>
+  <rect x="100" y="135" width="200" height="50" rx="6" fill="#64748B" opacity="0.35"/>
+  <path d="M95 120 L95 200 M110 120 L110 200" stroke="#334155" stroke-width="3"/>
+  <path d="M290 120 L290 200 M305 120 L305 200" stroke="#334155" stroke-width="3"/>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" role="img" aria-label="Mahagujarat Pipe Company">
+  <rect width="72" height="72" fill="#0B1D36"/>
+  <rect x="3" y="3" width="66" height="66" fill="none" stroke="#C9A227" stroke-width="1.75"/>
+  <rect x="8" y="8" width="56" height="56" fill="none" stroke="#1E3A5F" stroke-width="1"/>
+  <!-- horizontal pipe -->
+  <rect x="12" y="32" width="48" height="8" rx="1.5" fill="#C5CDD6"/>
+  <rect x="12" y="32" width="6" height="8" fill="#9CA3AF"/>
+  <rect x="54" y="32" width="6" height="8" fill="#9CA3AF"/>
+  <!-- vertical pipe -->
+  <rect x="32" y="12" width="8" height="48" rx="1.5" fill="#A8B2BD"/>
+  <rect x="32" y="12" width="8" height="6" fill="#D1D5DB"/>
+  <rect x="32" y="54" width="8" height="6" fill="#D1D5DB"/>
+  <!-- center flange -->
+  <circle cx="36" cy="36" r="9" fill="#0B1D36" stroke="#C9A227" stroke-width="2"/>
+  <circle cx="36" cy="36" r="3.5" fill="#C9A227"/>
+  <text x="36" y="64" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="7" font-weight="700" fill="#C9A227" letter-spacing="0.5">MPC</text>
+</svg>
