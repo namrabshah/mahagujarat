@@ -19,7 +19,7 @@ const body = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mahagujaratpipe.com"),
+  metadataBase: new URL("https://mahagujaratpipe.in"),
   title: {
     default:
       "Mahagujarat Pipe Company | MS, GI & PVC Pipes & Pipe Fittings",
