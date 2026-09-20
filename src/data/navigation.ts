@@ -57,9 +57,11 @@ export const FOOTER_PRODUCTS = [
   { label: "MS Pipes", href: "/products/ms-pipes" },
   { label: "GI Pipes", href: "/products/gi-pipes" },
   { label: "PVC Pipes", href: "/products/pvc-pipes" },
+  { label: "UPVC / CPVC", href: "/products?filter=UPVC" },
   { label: "Pipe Fittings", href: "/products?filter=Fittings" },
   { label: "Valves", href: "/products?filter=Valves" },
   { label: "Flanges", href: "/products?filter=Flanges" },
+  { label: "Plumbing", href: "/products?filter=Plumbing" },
 ] as const;
 
 export const FOOTER_LINKS = [

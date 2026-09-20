@@ -31,9 +31,25 @@ export default function ReviewsSection({ hideHeading = false }: Props) {
           </FadeIn>
         ) : null}
 
-        {/* Marquee Track with 7 Reviews */}
+        {/* 3 Stable Review Cards Top */}
+        <div className="mb-10 grid gap-5 sm:grid-cols-3">
+          {stableReviews.map((review, i) => (
+            <FadeIn key={review.id} delay={i * 50}>
+              <blockquote className="flex flex-col justify-between h-full border border-border bg-bg p-5 rounded-lg shadow-sm">
+                <div>
+                  <Stars count={review.stars} />
+                  <p className="mt-3 text-sm leading-relaxed font-medium text-navy">
+                    &ldquo;{review.text}&rdquo;
+                  </p>
+                </div>
+              </blockquote>
+            </FadeIn>
+          ))}
+        </div>
+
+        {/* Marquee Track with 7 Reviews Below */}
         <FadeIn>
-          <div className="mb-10 overflow-hidden border border-border bg-bg rounded-lg shadow-sm">
+          <div className="overflow-hidden border border-border bg-bg rounded-lg shadow-sm">
             <div className="marquee-track flex w-max gap-4 py-4 hover:[animation-play-state:paused]">
               {[...marqueeReviews, ...marqueeReviews].map((review, i) => (
                 <blockquote
@@ -46,29 +62,11 @@ export default function ReviewsSection({ hideHeading = false }: Props) {
                       &ldquo;{review.text}&rdquo;
                     </p>
                   </div>
-                 
                 </blockquote>
               ))}
             </div>
           </div>
         </FadeIn>
-
-        {/* 3 Stable Review Cards Below */}
-        <div className="grid gap-5 sm:grid-cols-3">
-          {stableReviews.map((review, i) => (
-            <FadeIn key={review.id} delay={i * 50}>
-              <blockquote className="flex flex-col justify-between h-full border border-border bg-bg p-5 rounded-lg shadow-sm">
-                <div>
-                  <Stars count={review.stars} />
-                  <p className="mt-3 text-sm leading-relaxed font-medium text-navy">
-                    &ldquo;{review.text}&rdquo;
-                  </p>
-                </div>
-               
-              </blockquote>
-            </FadeIn>
-          ))}
-        </div>
 
         <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:justify-center">
           <a

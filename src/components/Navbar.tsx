@@ -88,7 +88,7 @@ export default function Navbar() {
                   >
                     <button
                       type="button"
-                      className={`nav-item focus-ring rounded-sm px-3 py-2.5 text-[15px] font-semibold tracking-wide ${active ? "nav-item-active" : ""
+                      className={`nav-item focus-ring inline-flex items-center rounded-sm px-3 py-2.5 text-[15px] font-semibold tracking-wide ${active ? "nav-item-active" : ""
                         }`}
                       aria-expanded={productsOpen}
                       aria-haspopup="menu"
@@ -96,10 +96,19 @@ export default function Navbar() {
                       onClick={() => setProductsOpen((v) => !v)}
                       onFocus={openDropdown}
                     >
-                      {link.label}
-                      <span className="ml-1 text-[0.65rem] opacity-70" aria-hidden>
-                        ▾
-                      </span>
+                      <span>{link.label}</span>
+                      <svg
+                        className={`ml-1.5 h-4 w-4 fill-current transition-transform duration-200 ${productsOpen ? "rotate-180 text-gold" : "opacity-80"
+                          }`}
+                        viewBox="0 0 20 20"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
                     </button>
                     <div
                       id={dropdownId}

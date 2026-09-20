@@ -64,11 +64,25 @@ const IMG = {
   plumbing: "/images/plumbing.png",
   water: "/images/water.png",
   watervalve: "/images/watervalve.png",
+  ballvalve: "/images/ball.png",
+  gatevalve: "/images/gatevalve.jpg",
+  gmvalve: "/images/gmvalue.png",
   bathroom: "/images/bathroom.png",
   workshop: "/images/products-photo/warehouse.jpg",
   hero: "/images/hero/hero-pipe-fittings.png",
   gi: "/images/gipipe.png",
   stock: "/images/products-photo/steel-stock.jpg",
+  mselbow: "/images/mselbow.png",
+  gielbow: "/images/gielbow.png",
+  pvcelbow: "/images/pvcelbow.png",
+  tee: "/images/tee.png",
+  coupling: "/images/coupling.png",
+  reducer: "/images/reducer.png",
+  union: "/images/union.png",
+  nipple: "/images/nipple.png",
+  bush: "/images/bushh.png",
+  cap: "/images/cap.png",
+  bend: "/images/pipebend.png",
 } as const;
 
 export const products: Product[] = [
@@ -139,7 +153,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["MS"],
     filterTags: ["MS", "Fittings"],
-    image: IMG.fittings,
+    image: IMG.mselbow,
     shortDescription: "MS elbows for direction change in steel lines.",
     description:
       "MS elbows used to change pipe direction in mild steel piping layouts for industrial and construction work.",
@@ -151,7 +165,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["GI"],
     filterTags: ["GI", "Fittings"],
-    image: IMG.fittings,
+    image: IMG.gielbow,
     shortDescription: "GI elbows for galvanized pipe systems.",
     description:
       "Galvanized elbows for water and utility lines using GI pipes and fittings.",
@@ -163,7 +177,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["PVC"],
     filterTags: ["PVC", "Fittings"],
-    image: IMG.pvc,
+    image: IMG.pvcelbow,
     shortDescription: "PVC elbows for plumbing direction changes.",
     description:
       "PVC elbows for residential and commercial plumbing layouts.",
@@ -175,7 +189,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["MS", "GI", "PVC"],
     filterTags: ["Fittings", "MS", "GI", "PVC"],
-    image: IMG.fittings,
+    image: IMG.tee,
     shortDescription: "Pipe tees for branching lines.",
     description:
       "Equal and reducing tees for branching pipe networks in MS, GI and PVC systems.",
@@ -187,7 +201,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["MS", "GI", "PVC"],
     filterTags: ["Fittings"],
-    image: IMG.fittings,
+    image: IMG.coupling,
     shortDescription: "Couplings for joining straight pipe runs.",
     description:
       "Pipe couplings used to join straight sections in steel and PVC piping.",
@@ -199,7 +213,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["MS", "GI"],
     filterTags: ["Fittings", "MS", "GI"],
-    image: IMG.fittings,
+    image: IMG.reducer,
     shortDescription: "Reducers for size transitions.",
     description:
       "Reducers to connect pipes of different diameters in industrial and plumbing systems.",
@@ -211,7 +225,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["MS", "GI"],
     filterTags: ["Fittings"],
-    image: IMG.fittings,
+    image: IMG.union,
     shortDescription: "Unions for removable pipe joints.",
     description:
       "Pipe unions for joints that may need to be opened for maintenance or assembly.",
@@ -223,7 +237,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["MS", "GI"],
     filterTags: ["Fittings"],
-    image: IMG.fittings,
+    image: IMG.nipple,
     shortDescription: "Threaded nipples for pipe extensions.",
     description:
       "Threaded pipe nipples for connecting and extending pipe sections.",
@@ -235,23 +249,11 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["MS", "GI"],
     filterTags: ["Fittings"],
-    image: IMG.fittings,
+    image: IMG.bush,
     shortDescription: "Reducing bushes for threaded transitions.",
     description:
       "Bushes for threaded size transitions in pipe and fitting assemblies.",
     applications: ["Threaded joints", "Plumbing", "Industrial"],
-  },
-  {
-    slug: "cap",
-    name: "Cap",
-    category: "Pipe Fittings",
-    materials: ["MS", "GI", "PVC"],
-    filterTags: ["Fittings"],
-    image: IMG.fittings,
-    shortDescription: "End caps for sealing pipe ends.",
-    description:
-      "Caps and plugs for sealing open pipe ends during installation or temporary closure.",
-    applications: ["Sealing", "Installation", "Maintenance"],
   },
   {
     slug: "bend",
@@ -259,7 +261,7 @@ export const products: Product[] = [
     category: "Pipe Fittings",
     materials: ["MS", "GI", "PVC"],
     filterTags: ["Fittings", "PVC"],
-    image: IMG.fittings,
+    image: IMG.bend,
     shortDescription: "Pipe bends for smooth direction changes.",
     description:
       "Pipe bends for layouts that need a smoother turn than a sharp elbow.",
@@ -271,7 +273,7 @@ export const products: Product[] = [
     category: "Valves & Cocks",
     materials: ["MS", "GI"],
     filterTags: ["Valves"],
-    image: IMG.valves,
+    image: IMG.ballvalve,
     shortDescription: "Ball valves for reliable shut-off control.",
     description:
       "Ball valves used for on/off control in water and industrial pipe lines.",
@@ -283,7 +285,7 @@ export const products: Product[] = [
     category: "Valves & Cocks",
     materials: ["MS", "GI"],
     filterTags: ["Valves"],
-    image: IMG.valves,
+    image: IMG.gatevalve,
     shortDescription: "Gate valves for isolation duties.",
     description:
       "Gate valves for isolation in utility and industrial piping systems.",
@@ -295,7 +297,7 @@ export const products: Product[] = [
     category: "Valves & Cocks",
     materials: [],
     filterTags: ["Valves"],
-    image: IMG.fittings,
+    image: IMG.gmvalve,
     shortDescription: "Gunmetal valves for water and steam lines.",
     description:
       "GM valves for water, steam and related line control applications.",
@@ -312,18 +314,6 @@ export const products: Product[] = [
     description:
       "Water valves for plumbing and water distribution requirements.",
     applications: ["Water supply", "Plumbing", "Buildings"],
-  },
-  {
-    slug: "gas-cock",
-    name: "Gas Cock",
-    category: "Valves & Cocks",
-    materials: [],
-    filterTags: ["Valves"],
-    image: IMG.fittings,
-    shortDescription: "Gas cocks for line control applications.",
-    description:
-      "Gas cocks and related control fittings for applicable pipe line installations.",
-    applications: ["Gas lines", "Utility", "Control"],
   },
   {
     slug: "other-valves",
