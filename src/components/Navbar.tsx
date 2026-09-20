@@ -7,6 +7,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import { company } from "@/data/company";
 import { isNavActive, NAV_LINKS } from "@/data/navigation";
 import { CloseIcon, MenuIcon, PhoneIcon } from "./Icons";
+import { trackPhoneClick } from "@/lib/gtag";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -154,6 +155,7 @@ export default function Navbar() {
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <a
               href={company.secondaryPhoneTel}
+              onClick={() => trackPhoneClick("Navbar")}
               className="focus-ring hidden items-center gap-2 rounded-sm text-sm font-semibold text-navy lg:inline-flex"
             >
               <PhoneIcon size={17} className="text-gold" />
@@ -161,6 +163,7 @@ export default function Navbar() {
             </a>
             <a
               href={company.secondaryPhoneTel}
+              onClick={() => trackPhoneClick("Navbar Call Button")}
               className="focus-ring hidden h-11 items-center justify-center rounded-sm bg-navy px-4 text-sm font-semibold text-white transition hover:bg-navy-mid md:inline-flex"
             >
               Call Now

@@ -5,6 +5,7 @@ import MobileActionBar from "@/components/MobileActionBar";
 import Navbar from "@/components/Navbar";
 import { company } from "@/data/company";
 import JsonLd from "@/components/JsonLd";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const display = Barlow_Condensed({
@@ -52,6 +53,7 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body className="flex min-h-full flex-col antialiased">
+        <GoogleAnalytics />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

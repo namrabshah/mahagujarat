@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "@/data/products";
 import { whatsappEnquireUrl } from "@/data/company";
+import { trackWhatsAppClick } from "@/lib/gtag";
 
 type ProductCardProps = {
   product: Product;
@@ -35,6 +38,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           href={whatsappEnquireUrl(product.name)}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => trackWhatsAppClick(`ProductCard - ${product.name}`)}
           className="focus-ring mt-4 inline-flex min-h-10 items-center justify-center rounded-sm bg-navy px-3 py-2.5 text-sm font-semibold text-white transition hover:bg-navy-mid"
         >
           Enquire Now
