@@ -4,9 +4,9 @@ import LocationsSection from "@/components/LocationsSection";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Locations",
+  title: "Mahagujarat Pipe Company | Pipe Dealer in Ahmedabad & Vatva",
   description:
-    "Visit Mahagujarat Pipe Company at Vatva GIDC and Pankor Naka, Ahmedabad. Get directions on Google Maps.",
+    "Visit Mahagujarat Pipe Company at Vatva GIDC (Phase 1) and Pankor Naka, Ahmedabad. Get directions, contact phone numbers, and branch business hours.",
   alternates: {
     canonical: "/locations",
   },

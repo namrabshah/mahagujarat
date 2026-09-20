@@ -30,13 +30,11 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-5 text-[1.75rem] font-bold leading-[1.12] sm:text-4xl md:text-[2.6rem] lg:text-[2.85rem]">
-              Your Trusted Partner for Pipes &amp; Pipe Fittings
+              Mahagujarat Pipe Company — Pipe Dealer &amp; Supplier in Ahmedabad
             </h1>
 
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-steel-light sm:text-base md:text-lg">
-              MS, GI, PVC, UPVC, CPVC pipes, fittings, valves, flanges and
-              plumbing products for industrial, commercial and residential
-              requirements.
+              Established in 1955, offering MS, GI, PVC, UPVC, CPVC pipes, pipe fittings, valves, flanges and plumbing products across Vatva GIDC &amp; Pankor Naka, Ahmedabad.
             </p>
 
             {/* Desktop CTAs stay with text */}

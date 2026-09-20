@@ -5,9 +5,9 @@ import PageHero from "@/components/PageHero";
 import ProductSection from "@/components/ProductSection";
 
 export const metadata: Metadata = {
-  title: "Products",
+  title: "Pipes & Pipe Fittings | Mahagujarat Pipe Company Ahmedabad",
   description:
-    "Browse MS, GI, PVC, UPVC, CPVC pipes, fittings, valves, flanges and plumbing products from Mahagujarat Pipe Company.",
+    "Browse MS, GI, PVC, UPVC, CPVC pipes, pipe fittings, valves, flanges, and plumbing products from Mahagujarat Pipe Company in Ahmedabad & Vatva GIDC.",
   alternates: {
     canonical: "/products",
   },

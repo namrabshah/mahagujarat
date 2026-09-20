@@ -13,7 +13,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       <Link href={`/products/${product.slug}`} className="relative block aspect-[4/3] overflow-hidden bg-slate-50">
         <Image
           src={product.image}
-          alt={product.name}
+          alt={`${product.name} — Mahagujarat Pipe Company Ahmedabad`}
           fill
           className="object-contain p-1 transition duration-500 group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"

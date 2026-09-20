@@ -5,9 +5,9 @@ import EnquiryCTA from "@/components/EnquiryCTA";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact Mahagujarat Pipe Company | Ahmedabad Pipe Supplier",
   description:
-    "Contact Mahagujarat Pipe Company — call 9377147202 , WhatsApp, or send an enquiry.",
+    "Contact Mahagujarat Pipe Company in Ahmedabad. Call 8320622941 or 9377147202, WhatsApp us, or visit our Vatva GIDC & Pankor Naka branches.",
   alternates: {
     canonical: "/contact",
   },

@@ -6,9 +6,9 @@ import StoreGallery from "@/components/StoreGallery";
 import { WhyChooseUs } from "@/components/TrustIntro";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us | Mahagujarat Pipe Company Ahmedabad",
   description:
-    "About Mahagujarat Pipe Company — established 1955 in Ahmedabad. MS, GI, PVC pipes, fittings, valves and flanges.",
+    "Learn about Mahagujarat Pipe Company, established 1955 in Ahmedabad. Leading supplier of MS, GI, PVC pipes and fittings with branches at Vatva GIDC & Pankor Naka.",
   alternates: {
     canonical: "/about",
   },

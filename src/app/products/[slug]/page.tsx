@@ -16,9 +16,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) return { title: "Product" };
+
+  const titleMap: Record<string, string> = {
+    "ms-pipes": "MS Pipes | MS Pipe Dealer & Supplier in Ahmedabad",
+    "gi-pipes": "GI Pipes | GI Pipe Dealer & Supplier in Ahmedabad",
+    "pvc-pipes": "PVC Pipes | PVC Pipe Dealer & Supplier in Ahmedabad",
+    "cpvc-pipes": "CPVC Pipes | CPVC Pipe Dealer & Supplier in Ahmedabad",
+    "upvc-pipes": "UPVC Pipes | UPVC Pipe Dealer & Supplier in Ahmedabad",
+    "pipe-flanges": "Pipe Flanges | Industrial Flange Supplier Ahmedabad",
+  };
+
+  const seoTitle =
+    titleMap[slug] || `${product.name} | Pipe Fittings Supplier in Ahmedabad & Vatva`;
+
   return {
-    title: product.name,
-    description: product.shortDescription,
+    title: seoTitle,
+    description: `${product.name} — ${product.shortDescription} Offered by Mahagujarat Pipe Company in Ahmedabad & Vatva GIDC.`,
     alternates: {
       canonical: `/products/${slug}`,
     },

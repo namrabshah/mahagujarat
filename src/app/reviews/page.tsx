@@ -4,9 +4,9 @@ import PageHero from "@/components/PageHero";
 import ReviewsSection from "@/components/ReviewsSection";
 
 export const metadata: Metadata = {
-  title: "Reviews",
+  title: "Customer Reviews | Mahagujarat Pipe Company Ahmedabad",
   description:
-    "View and write Google reviews for Mahagujarat Pipe Company. Reviews are submitted on Google, not on this website.",
+    "Read verified Google & Justdial customer reviews for Mahagujarat Pipe Company, your trusted pipe and fitting dealer in Ahmedabad.",
   alternates: {
     canonical: "/reviews",
   },
