@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import MobileActionBar from "@/components/MobileActionBar";
 import Navbar from "@/components/Navbar";
 import { company } from "@/data/company";
+import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
 const display = Barlow_Condensed({
@@ -27,6 +28,9 @@ export const metadata: Metadata = {
   },
   description:
     "Mahagujarat Pipe Company, established in 1955, offers MS, GI, PVC and related pipes, pipe fittings, valves, flanges and plumbing products in Ahmedabad, Gujarat.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Mahagujarat Pipe Company | MS, GI & PVC Pipes & Pipe Fittings",
     description:
@@ -44,6 +48,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} h-full`}>
+      <head>
+        <JsonLd />
+      </head>
       <body className="flex min-h-full flex-col antialiased">
         <Navbar />
         <main className="flex-1">{children}</main>

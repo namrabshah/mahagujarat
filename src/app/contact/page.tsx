@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Contact Mahagujarat Pipe Company — call 9377147202 , WhatsApp, or send an enquiry.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

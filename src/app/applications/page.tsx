@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Applications",
   description:
     "Applications for Mahagujarat Pipe Company products — residential, commercial, industrial, plumbing and more.",
+  alternates: {
+    canonical: "/applications",
+  },
 };
 
 export default function ApplicationsPage() {

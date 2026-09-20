@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Products",
   description:
     "Browse MS, GI, PVC, UPVC, CPVC pipes, fittings, valves, flanges and plumbing products from Mahagujarat Pipe Company.",
+  alternates: {
+    canonical: "/products",
+  },
 };
 
 export default function ProductsPage() {

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "About Mahagujarat Pipe Company — established 1955 in Ahmedabad. MS, GI, PVC pipes, fittings, valves and flanges.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {

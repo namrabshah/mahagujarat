@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Locations",
   description:
     "Visit Mahagujarat Pipe Company at Vatva GIDC and Pankor Naka, Ahmedabad. Get directions on Google Maps.",
+  alternates: {
+    canonical: "/locations",
+  },
 };
 
 export default function LocationsPage() {

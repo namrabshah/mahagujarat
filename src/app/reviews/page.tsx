@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Reviews",
   description:
     "View and write Google reviews for Mahagujarat Pipe Company. Reviews are submitted on Google, not on this website.",
+  alternates: {
+    canonical: "/reviews",
+  },
 };
 
 export default function ReviewsPage() {
