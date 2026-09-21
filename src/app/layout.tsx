@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Barlow_Condensed, Source_Sans_3 } from "next/font/google";
 import Footer from "@/components/Footer";
 import MobileActionBar from "@/components/MobileActionBar";
@@ -56,6 +57,18 @@ export default function RootLayout({
     <html lang="en" className={`${display.variable} ${body.variable} h-full`} suppressHydrationWarning>
       <head>
         <JsonLd />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-W0VWFECM0"
+          strategy="beforeInteractive"
+        />
+        <Script id="google-analytics" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-W0VWFECM0');
+          `}
+        </Script>
       </head>
       <body className="flex min-h-full flex-col antialiased" suppressHydrationWarning>
         <GoogleAnalytics />
