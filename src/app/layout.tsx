@@ -32,6 +32,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  icons: {
+    icon: "/images/favicon.png",
+    shortcut: "/images/favicon.png",
+    apple: "/images/favicon.png",
+  },
   openGraph: {
     title: "Mahagujarat Pipe Company | MS, GI & PVC Pipes & Pipe Fittings",
     description:
@@ -48,11 +53,11 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} h-full`}>
+    <html lang="en" className={`${display.variable} ${body.variable} h-full`} suppressHydrationWarning>
       <head>
         <JsonLd />
       </head>
-      <body className="flex min-h-full flex-col antialiased">
+      <body className="flex min-h-full flex-col antialiased" suppressHydrationWarning>
         <GoogleAnalytics />
         <Navbar />
         <main className="flex-1">{children}</main>
