@@ -47,34 +47,53 @@ export const metadata: Metadata = {
     siteName: company.name,
     images: [{ url: company.logo, alt: company.name }],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} h-full`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${display.variable} ${body.variable} h-full`}
+      suppressHydrationWarning
+    >
       <head>
         <JsonLd />
+
+        {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-W0VWFECM0"
           strategy="beforeInteractive"
         />
+
         <Script id="google-analytics" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
+            function gtag(){window.dataLayer.push(arguments);}
+            window.gtag = gtag;
             gtag('js', new Date());
             gtag('config', 'G-W0VWFECM0');
           `}
         </Script>
       </head>
-      <body className="flex min-h-full flex-col antialiased" suppressHydrationWarning>
+
+      <body
+        className="flex min-h-full flex-col antialiased"
+        suppressHydrationWarning
+      >
         <GoogleAnalytics />
+
         <Navbar />
+
         <main className="flex-1">{children}</main>
+
         <Footer />
+
         <MobileActionBar />
       </body>
     </html>

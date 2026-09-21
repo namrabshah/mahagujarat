@@ -10,7 +10,8 @@ export default function AnalyticsTracker() {
   const isInitialRender = useRef(true);
 
   useEffect(() => {
-    // Skip tracking on initial mount because inline GA tag initialization handles initial pageview
+    // Skip initial pageview because the Google tag
+    // in app/layout.tsx already handles it.
     if (isInitialRender.current) {
       isInitialRender.current = false;
       return;
@@ -30,7 +31,7 @@ export default function AnalyticsTracker() {
         GA_MEASUREMENT_ID,
         {
           page_path: url,
-        }
+        },
       );
     }
   }, [pathname, searchParams]);
