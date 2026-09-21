@@ -1,35 +1,7 @@
-"use client";
-
 import Script from "next/script";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, Suspense } from "react";
+import { Suspense } from "react";
 import { GA_MEASUREMENT_ID } from "@/lib/gtag";
-
-function AnalyticsTracker() {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  useEffect(() => {
-    if (
-      pathname &&
-      typeof window !== "undefined" &&
-      typeof (window as unknown as { gtag?: Function }).gtag === "function"
-    ) {
-      const url = searchParams?.toString()
-        ? `${pathname}?${searchParams.toString()}`
-        : pathname;
-      (window as unknown as { gtag: Function }).gtag(
-        "config",
-        GA_MEASUREMENT_ID,
-        {
-          page_path: url,
-        },
-      );
-    }
-  }, [pathname, searchParams]);
-
-  return null;
-}
+import AnalyticsTracker from "./AnalyticsTracker";
 
 export default function GoogleAnalytics() {
   if (!GA_MEASUREMENT_ID) return null;
@@ -37,23 +9,23 @@ export default function GoogleAnalytics() {
   return (
     <>
       <Script
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
+
       <Script
         id="google-analytics"
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', '${GA_MEASUREMENT_ID}');
           `,
         }}
       />
+
       <Suspense fallback={null}>
         <AnalyticsTracker />
       </Suspense>
