@@ -4,8 +4,9 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
+      // Favicons and all public assets remain crawlable for Googlebot.
       allow: "/",
     },
-    sitemap: "https://mahagujaratpipe.in/sitemap.xml",
+    sitemap: "https://www.mahagujaratpipe.in/sitemap.xml",
   };
 }
