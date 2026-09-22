@@ -1,5 +1,5 @@
 export const GA_MEASUREMENT_ID =
-  process.env.NEXT_PUBLIC_GA_ID || "G-W0VWFECM0";
+  process.env.NEXT_PUBLIC_GA_ID || "G-S48PRHH4DR";
 
 /**
  * Safe Google Analytics 4 event tracking helper.
