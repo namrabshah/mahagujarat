@@ -22,31 +22,50 @@ const body = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mahagujaratpipe.in"),
+  metadataBase: new URL("https://www.mahagujaratpipe.in"),
+
   title: {
     default:
-      "Mahagujarat Pipe Company | MS, GI & PVC Pipes & Pipe Fittings",
+      "Mahagujarat Pipe Company | Pipe Dealer & Supplier in Ahmedabad Since 1955",
     template: "%s | Mahagujarat Pipe Company",
   },
+
   description:
-    "Mahagujarat Pipe Company, established in 1955, offers MS, GI, PVC and related pipes, pipe fittings, valves, flanges and plumbing products in Ahmedabad, Gujarat.",
+    "Mahagujarat Pipe Company, established in 1955, is a pipe dealer and supplier in Ahmedabad, Gujarat, offering MS, GI, PVC, UPVC and CPVC pipes, pipe fittings, valves, flanges and plumbing products.",
+
   alternates: {
     canonical: "/",
   },
+
   icons: {
     icon: "/images/favicon.png",
     shortcut: "/images/favicon.png",
     apple: "/images/favicon.png",
   },
+
   openGraph: {
-    title: "Mahagujarat Pipe Company | MS, GI & PVC Pipes & Pipe Fittings",
+    title:
+      "Mahagujarat Pipe Company | Pipe Dealer & Supplier in Ahmedabad Since 1955",
+
     description:
-      "Mahagujarat Pipe Company, established in 1955, offers MS, GI, PVC and related pipes, pipe fittings, valves, flanges and plumbing products in Ahmedabad, Gujarat.",
-    type: "website",
-    locale: "en_IN",
+      "Established in 1955, Mahagujarat Pipe Company supplies MS, GI, PVC, UPVC and CPVC pipes, pipe fittings, valves, flanges and plumbing products in Ahmedabad, Gujarat.",
+
+    url: "https://www.mahagujaratpipe.in",
+
     siteName: company.name,
-    images: [{ url: company.logo, alt: company.name }],
+
+    locale: "en_IN",
+
+    type: "website",
+
+    images: [
+      {
+        url: company.logo,
+        alt: "Mahagujarat Pipe Company",
+      },
+    ],
   },
+
   robots: {
     index: true,
     follow: true,

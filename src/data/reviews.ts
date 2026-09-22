@@ -30,8 +30,8 @@ export const customerReviews: CustomerReview[] = [
   {
     id: "2",
     stars: 5,
-    text: "Good quality products and owner is very kind & helpful. Overall very good experience.",
-    source: "Justdial Review",
+    text: "One of the best shop to purchase any plumbing related product. Support from Bhaven bhai and Ketan bhai is very excellent I have been a regular customer since last 6 years and the product quality is superb",
+    source: "Google Review",
   },
   {
     id: "3",
