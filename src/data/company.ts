@@ -19,9 +19,9 @@ export const company = {
   logo: "/images/logo.png",
 
   /** Primary customer contact */
-  primaryPhone: "7016633874",
-  primaryPhoneDisplay: "7016633874",
-  primaryPhoneTel: "tel:+917016633874",
+  primaryPhone: "9904796732",
+  primaryPhoneDisplay: "9904796732",
+  primaryPhoneTel: "tel:+919904796732",
 
   /** Primary WhatsApp number — MUST BE 9377147202 */
   primaryWhatsApp: "919377147202",
@@ -30,6 +30,11 @@ export const company = {
   secondaryPhone: "9377147202",
   secondaryPhoneDisplay: "9377147202",
   secondaryPhoneTel: "tel:+919377147202",
+
+  /** Navbar contact number */
+  navbarPhone: "8320622941",
+  navbarPhoneDisplay: "8320622941",
+  navbarPhoneTel: "tel:+918320622941",
 
   /** Business Working Hours */
   workingHours: {
@@ -43,8 +48,8 @@ export const company = {
   contacts: {
     ketan: {
       name: "Ketan Shah",
-      phone: "7016633874",
-      phoneTel: "tel:+917016633874",
+      phone: "9904796732",
+      phoneTel: "tel:+919904796732",
     },
     bhaven: {
       name: "Bhaven Shah",
@@ -81,11 +86,11 @@ export const company = {
       address:
         "Plot No.87/1, B/S Shree Ram Krupa WeighBridge,Near Neeka Tube Chowkdi,Vatva GIDC Phase1, Ahmedabad-382445, Gujarat",
       contacts: [
-        { name: "Ketan Shah", phone: "7016633874", phoneTel: "tel:+917016633874" },
+        { name: "Ketan Shah", phone: "9904796732", phoneTel: "tel:+919904796732" },
         { name: "Bhaven Shah", phone: "9377147202", phoneTel: "tel:+919377147202" },
       ],
-      phone: "7016633874",
-      phoneTel: "tel:+917016633874",
+      phone: "9377147202",
+      phoneTel: "tel:+919377147202",
       hours: "Mon–Sat: 9:00 AM – 7:30 PM | Sun: 9:00 AM – 12:30 PM",
       mapsSearchUrl:
         "https://www.google.com/maps/search/?api=1&query=Mahagujarat+Pipe+Company+87%2F1+Vatva+GIDC+Ahmedabad",

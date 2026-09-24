@@ -19,11 +19,11 @@ export default function EnquiryCTA() {
             </p>
             <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row">
               <a
-                href={company.primaryPhoneTel}
+                href={company.secondaryPhoneTel}
                 className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-gold px-5 text-sm font-bold text-navy-deep"
               >
                 <PhoneIcon size={18} />
-                Call {company.primaryPhoneDisplay}
+                Call {company.secondaryPhoneDisplay}
               </a>
               <Link
                 href="/contact#send-enquiry"

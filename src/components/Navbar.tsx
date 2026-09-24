@@ -154,15 +154,15 @@ export default function Navbar() {
 
           <div className="flex shrink-0 items-center gap-2 sm:gap-3">
             <a
-              href={company.secondaryPhoneTel}
+              href={company.navbarPhoneTel}
               onClick={() => trackPhoneClick("Navbar")}
               className="focus-ring hidden items-center gap-2 rounded-sm text-sm font-semibold text-navy lg:inline-flex"
             >
               <PhoneIcon size={17} className="text-gold" />
-              <span>{company.secondaryPhoneDisplay}</span>
+              <span>{company.navbarPhoneDisplay}</span>
             </a>
             <a
-              href={company.secondaryPhoneTel}
+              href={company.navbarPhoneTel}
               onClick={() => trackPhoneClick("Navbar Call Button")}
               className="focus-ring hidden h-11 items-center justify-center rounded-sm bg-navy px-4 text-sm font-semibold text-white transition hover:bg-navy-mid md:inline-flex"
             >

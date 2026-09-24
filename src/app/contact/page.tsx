@@ -8,7 +8,7 @@ import { company } from "@/data/company";
 export const metadata: Metadata = {
   title: "Contact Mahagujarat Pipe Company | Pipe Supplier in Ahmedabad",
   description:
-    "Contact Mahagujarat Pipe Company in Ahmedabad, Gujarat. Call 7016633874 or 9377147202, send WhatsApp enquiries, or visit our Vatva GIDC Phase 1 & Pankor Naka branches.",
+    "Contact Mahagujarat Pipe Company in Ahmedabad, Gujarat. Call 9904796732 or 9377147202, send WhatsApp enquiries, or visit our Vatva GIDC Phase 1 & Pankor Naka branches.",
   alternates: {
     canonical: `${company.domain}/contact`,
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Contact Mahagujarat Pipe Company | Pipe Supplier in Ahmedabad",
     description:
-      "Contact Ketan Shah (7016633874), Bhaven Shah (9377147202), or Taral Shah (9979258422) for pipes, fittings, valves & flanges in Ahmedabad & Vatva.",
+      "Contact Ketan Shah (9904796732), Bhaven Shah (9377147202), or Taral Shah (9979258422) for pipes, fittings, valves & flanges in Ahmedabad & Vatva.",
   },
 };
 

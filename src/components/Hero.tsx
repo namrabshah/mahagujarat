@@ -74,11 +74,11 @@ function HeroButtons() {
   return (
     <>
       <a
-        href={company.primaryPhoneTel}
+        href={company.secondaryPhoneTel}
         className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-sm bg-gold px-5 py-3 text-sm font-bold text-navy-deep transition hover:bg-gold-soft"
       >
         <PhoneIcon size={17} />
-        Call Now · {company.primaryPhoneDisplay}
+        Call Now · {company.secondaryPhoneDisplay}
       </a>
       <Link
         href="/products"

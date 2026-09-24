@@ -155,7 +155,7 @@ export default function ContactSection({ hideHeading = false }: Props) {
                 <ul className="mt-6 space-y-4">
                   {/* Primary Phone */}
                   <li>
-                    <a href={company.primaryPhoneTel} className="focus-ring flex gap-3 group">
+                    <a href={company.secondaryPhoneTel} className="focus-ring flex gap-3 group">
                       <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded bg-navy text-gold group-hover:bg-gold group-hover:text-navy transition">
                         <PhoneIcon size={18} />
                       </span>
@@ -164,7 +164,7 @@ export default function ContactSection({ hideHeading = false }: Props) {
                           Primary Phone (Click to Call)
                         </span>
                         <span className="text-base font-bold text-navy group-hover:text-gold transition">
-                          {company.primaryPhoneDisplay}
+                          {company.secondaryPhoneDisplay}
                         </span>
                       </div>
                     </a>
@@ -172,7 +172,7 @@ export default function ContactSection({ hideHeading = false }: Props) {
 
                   {/* Secondary Phone */}
                   <li>
-                    <a href={company.secondaryPhoneTel} className="focus-ring flex gap-3 group">
+                    <a href={company.primaryPhoneTel} className="focus-ring flex gap-3 group">
                       <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded bg-navy text-gold group-hover:bg-gold group-hover:text-navy transition">
                         <PhoneIcon size={18} />
                       </span>
@@ -181,7 +181,7 @@ export default function ContactSection({ hideHeading = false }: Props) {
                           Secondary Phone (Click to Call)
                         </span>
                         <span className="text-base font-bold text-navy group-hover:text-gold transition">
-                          {company.secondaryPhoneDisplay}
+                          {company.primaryPhoneDisplay}
                         </span>
                       </div>
                     </a>
@@ -245,7 +245,7 @@ export default function ContactSection({ hideHeading = false }: Props) {
               {/* Action Buttons */}
               <div className="mt-8 pt-6 border-t border-border/80 flex flex-col gap-2.5 sm:flex-row">
                 <a
-                  href={company.primaryPhoneTel}
+                  href={company.secondaryPhoneTel}
                   className="focus-ring inline-flex min-h-[48px] flex-1 items-center justify-center gap-2 rounded-sm bg-navy px-4 text-sm font-bold text-white transition hover:bg-navy-mid"
                 >
                   <PhoneIcon size={16} className="text-gold" />
@@ -321,7 +321,7 @@ export default function ContactSection({ hideHeading = false }: Props) {
                         setMobile(e.target.value);
                         if (errors.mobile) setErrors((prev) => ({ ...prev, mobile: undefined }));
                       }}
-                      placeholder="e.g. 7016633874"
+                      placeholder="e.g. 9876543210"
                       className={`w-full rounded-md border bg-white px-3.5 py-3 text-sm font-semibold text-navy transition focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20 ${
                         errors.mobile ? "border-rose-500 bg-rose-50/20" : "border-border"
                       }`}

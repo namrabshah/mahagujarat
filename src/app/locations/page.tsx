@@ -7,7 +7,7 @@ import { company } from "@/data/company";
 export const metadata: Metadata = {
   title: "Pipe Dealer Locations in Ahmedabad | Vatva GIDC & Pankor Naka",
   description:
-    "Visit Mahagujarat Pipe Company branches at Plot 87/1 Vatva GIDC Phase 1 and Pankor Naka, Ahmedabad. Contact Ketan Shah (7016633874) & Bhaven Shah (9377147202) for pipe supplies.",
+    "Visit Mahagujarat Pipe Company branches at Plot 87/1 Vatva GIDC Phase 1 and Pankor Naka, Ahmedabad. Contact Ketan Shah (9904796732) & Bhaven Shah (9377147202) for pipe supplies.",
   alternates: {
     canonical: `${company.domain}/locations`,
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pipe Dealer Locations in Ahmedabad | Vatva GIDC & Pankor Naka",
     description:
-      "Visit our stockyards in Vatva GIDC Phase 1 & Pankor Naka, Ahmedabad. Call 7016633874 or 9377147202 for MS, GI, PVC, UPVC, CPVC pipe supplies.",
+      "Visit our stockyards in Vatva GIDC Phase 1 & Pankor Naka, Ahmedabad. Call 9904796732 or 9377147202 for MS, GI, PVC, UPVC, CPVC pipe supplies.",
   },
 };
 
