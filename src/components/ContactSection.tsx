@@ -321,7 +321,7 @@ export default function ContactSection({ hideHeading = false }: Props) {
                         setMobile(e.target.value);
                         if (errors.mobile) setErrors((prev) => ({ ...prev, mobile: undefined }));
                       }}
-                      placeholder="e.g. 8320622941"
+                      placeholder="e.g. 7016633874"
                       className={`w-full rounded-md border bg-white px-3.5 py-3 text-sm font-semibold text-navy transition focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/20 ${
                         errors.mobile ? "border-rose-500 bg-rose-50/20" : "border-border"
                       }`}

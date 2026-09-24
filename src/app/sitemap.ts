@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
+import { company } from "@/data/company";
 import { products } from "@/data/products";
 
-const BASE_URL = "https://mahagujaratpipe.in";
+const BASE_URL = company.domain; // https://www.mahagujaratpipe.in
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
@@ -22,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${BASE_URL}/products`,
       lastModified,
-      changeFrequency: "weekly",
+      changeFrequency: "daily",
       priority: 0.9,
     },
     {

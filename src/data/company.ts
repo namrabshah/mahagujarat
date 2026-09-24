@@ -13,14 +13,15 @@ export const company = {
   tagline: "Your Trusted Partner for Pipes & Pipe Fittings",
   email: "mahagujarat1955@gmail.com",
   emailMailto: "mailto:mahagujarat1955@gmail.com",
+  domain: "https://www.mahagujaratpipe.in",
   city: "Ahmedabad, Gujarat, India",
   gstin: "24AAEFM7426J1Z7",
   logo: "/images/logo.png",
 
   /** Primary customer contact */
-  primaryPhone: "8320622941",
-  primaryPhoneDisplay: "8320622941",
-  primaryPhoneTel: "tel:+918320622941",
+  primaryPhone: "7016633874",
+  primaryPhoneDisplay: "7016633874",
+  primaryPhoneTel: "tel:+917016633874",
 
   /** Primary WhatsApp number — MUST BE 9377147202 */
   primaryWhatsApp: "919377147202",
@@ -42,8 +43,8 @@ export const company = {
   contacts: {
     ketan: {
       name: "Ketan Shah",
-      phone: "8320622941",
-      phoneTel: "tel:+918320622941",
+      phone: "7016633874",
+      phoneTel: "tel:+917016633874",
     },
     bhaven: {
       name: "Bhaven Shah",
@@ -80,16 +81,20 @@ export const company = {
       address:
         "Plot No.87/1, B/S Shree Ram Krupa WeighBridge,Near Neeka Tube Chowkdi,Vatva GIDC Phase1, Ahmedabad-382445, Gujarat",
       contacts: [
-        { name: "Ketan Shah", phone: "8320622941", phoneTel: "tel:+918320622941" },
+        { name: "Ketan Shah", phone: "7016633874", phoneTel: "tel:+917016633874" },
         { name: "Bhaven Shah", phone: "9377147202", phoneTel: "tel:+919377147202" },
       ],
-      phone: "8320622941",
-      phoneTel: "tel:+918320622941",
+      phone: "7016633874",
+      phoneTel: "tel:+917016633874",
       hours: "Mon–Sat: 9:00 AM – 7:30 PM | Sun: 9:00 AM – 12:30 PM",
       mapsSearchUrl:
         "https://www.google.com/maps/search/?api=1&query=Mahagujarat+Pipe+Company+87%2F1+Vatva+GIDC+Ahmedabad",
       directionsUrl:
         "https://www.google.com/maps/dir/?api=1&destination=Mahagujarat+Pipe+Company+87%2F1+B%2Fs.+Shree+Ram+krupa+Weigh+bridge+Near+neeka+tube+chokdi+phase-1+vatva",
+      geo: {
+        latitude: "22.9566",
+        longitude: "72.6341",
+      },
       image: "/images/company/mahagujrat_logo.png",
     },
     pankor: {
@@ -107,6 +112,10 @@ export const company = {
       phoneTel: "tel:+919979258422",
       contactPerson: "Taral Shah",
       hours: "Mon–Sat: 10:00 AM – 7:30 PM | Sunday: Closed",
+      geo: {
+        latitude: "23.0248",
+        longitude: "72.5861",
+      },
       mapsSearchUrl:
         "https://www.google.com/maps/search/?api=1&query=2HGP%2B7MH+Mahagujrat+Pipe+Company+Ahmedabad",
       directionsUrl:

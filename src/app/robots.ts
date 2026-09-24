@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
+import { company } from "@/data/company";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      // Favicons and all public assets remain crawlable for Googlebot.
       allow: "/",
     },
-    sitemap: "https://www.mahagujaratpipe.in/sitemap.xml",
+    sitemap: `${company.domain}/sitemap.xml`,
   };
 }

@@ -25,12 +25,14 @@ export default function Hero() {
         <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-12">
           {/* Text */}
           <div className="order-1 min-w-0">
-            <span className="inline-flex rounded-sm border border-gold/45 bg-gold/10 px-3 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-gold-soft">
-              Established Since {company.established}
-            </span>
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="inline-flex rounded-sm border border-gold/45 bg-gold/10 px-3 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-gold-soft">
+                ESTABLISHED SINCE {company.established}
+              </span>
+            </div>
 
             <h1 className="mt-5 text-[1.75rem] font-bold leading-[1.12] sm:text-4xl md:text-[2.6rem] lg:text-[2.85rem]">
-              Mahagujarat Pipe Company — Pipe Dealer &amp; Supplier in Ahmedabad
+              Mahagujarat Pipe Company – Pipe Dealer &amp; Supplier in Ahmedabad
             </h1>
 
             <p className="mt-5 max-w-xl text-sm leading-relaxed text-steel-light sm:text-base md:text-lg">

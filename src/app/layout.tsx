@@ -22,16 +22,16 @@ const body = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.mahagujaratpipe.in"),
+  metadataBase: new URL(company.domain),
 
   title: {
     default:
-      "Mahagujarat Pipe Company | Pipe Dealer & Supplier in Ahmedabad Since 1955",
+      "Mahagujarat Pipe Company | Pipe Dealer & Supplier in Ahmedabad, Gujarat",
     template: "%s | Mahagujarat Pipe Company",
   },
 
   description:
-    "Mahagujarat Pipe Company, established in 1955, is a pipe dealer and supplier in Ahmedabad, Gujarat, offering MS, GI, PVC, UPVC and CPVC pipes, pipe fittings, valves, flanges and plumbing products.",
+    "Mahagujarat Pipe Company is a trusted pipe dealer and supplier in Ahmedabad, Gujarat. Buy MS, GI, PVC, UPVC, CPVC pipes, pipe fittings, valves, flanges and plumbing products in Vatva, Ahmedabad.",
 
   alternates: {
     canonical: "/",
@@ -71,12 +71,12 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Mahagujarat Pipe Company | Pipe Dealer & Supplier in Ahmedabad Since 1955",
+      "Mahagujarat Pipe Company | Pipe Dealer & Supplier in Ahmedabad, Gujarat",
 
     description:
-      "Established in 1955, Mahagujarat Pipe Company supplies MS, GI, PVC, UPVC and CPVC pipes, pipe fittings, valves, flanges and plumbing products in Ahmedabad, Gujarat.",
+      "Mahagujarat Pipe Company is a trusted pipe dealer and supplier in Ahmedabad, Gujarat. Buy MS, GI, PVC, UPVC, CPVC pipes, pipe fittings, valves, flanges and plumbing products in Vatva, Ahmedabad.",
 
-    url: "https://www.mahagujaratpipe.in",
+    url: company.domain,
 
     siteName: company.name,
 
@@ -86,15 +86,31 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: company.logo,
-        alt: "Mahagujarat Pipe Company",
+        url: `${company.domain}/images/logo.png`,
+        alt: "Mahagujarat Pipe Company — Pipe Dealer & Supplier in Ahmedabad, Gujarat",
       },
     ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Mahagujarat Pipe Company | Pipe Dealer & Supplier in Ahmedabad, Gujarat",
+    description:
+      "Mahagujarat Pipe Company is a trusted pipe dealer and supplier in Ahmedabad, Gujarat. Buy MS, GI, PVC, UPVC, CPVC pipes, pipe fittings, valves, flanges and plumbing products in Vatva, Ahmedabad.",
+    images: [`${company.domain}/images/logo.png`],
   },
 
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
